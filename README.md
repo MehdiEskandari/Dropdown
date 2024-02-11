@@ -1,9 +1,9 @@
 ## Project Overview
 
 - **Component Implementation**
-  - Dropdown Component: `src/uikit/Input/Dropdown.tsx`
+  - Dropdown Component: `src/uikit/components/Dropdown/Dropdown.tsx`
   
 - **Styling**
-  - Dropdown Stylesheet: `src/styles/modules/input.module.scss`
+  - Dropdown Stylesheet: `src/uikit/components/Dropdown/dropdown.module.scss`
   
 Please navigate to these paths to review.
