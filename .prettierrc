@@ -1,0 +1,32 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": ["*.tsx", "src/**/*.tsx" ],
+      "options": {
+        "tabWidth": 4,
+        "semi": true
+      }
+    },
+    {
+      "files": "*.scss",
+      "options": {
+        "parser": "scss",
+        "semi": true
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "semi": true
+      }
+    },
+    {
+      "files": ["*.scss", "*.css"],
+      "options": {
+        "plugins": ["prettier-plugin-import-sort"],
+        "semi": true
+      }
+    }
+  ]
+}

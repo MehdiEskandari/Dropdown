@@ -1,0 +1,174 @@
+.Container {
+  position: relative;
+  width: 22.3em;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1.4px solid #eee;
+  color: #666F7A;
+  font-family: Inter;
+  font-size: 14px;
+  padding: 0.35rem 0.8rem;
+  height: fit-content;
+  min-height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+// Main Styles
+.Selected_Item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  gap: 0.6rem;
+  width: 87%;
+  overflow: hidden;
+  flex-wrap: wrap;
+
+
+  &_Badge {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: .05em solid #e9ebf3;
+    border-radius: 6px;
+    padding: 5px 10px;
+    gap: 0.5rem;
+    cursor: pointer;
+    background: #F2F4FF;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+}
+
+.Input {
+  width: 100px;
+  height: 28px;
+  border: 0;
+  outline: none;
+}
+
+.Close {
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.Arrow {
+  cursor: pointer;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-top: 1.5px;
+  transform: rotate(0deg);
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &__Close {
+    transform: rotate(0deg);
+
+    transition: 0.3s;
+  }
+
+  &__Open {
+    transform: rotate(180deg);
+
+    transition: 0.3s;
+  }
+}
+
+.List {
+  background: #ffffff;
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 0;
+  width: 100%;
+  border-radius: 16px;
+  border: 1.4px solid #eee;
+  padding: 0.9rem 0.6rem;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-height: 258px;
+  max-width: 100%;
+  overflow: scroll;
+  box-sizing: border-box;
+
+  &__Show {
+    display: flex;
+  }
+
+
+  &_Item {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+    color: #666F7A;
+    font-family: Inter;
+    font-size: 14px;
+    max-height: 32px;
+    position: relative;
+
+    &_Content {
+      position: relative;
+
+      &_NotFound {
+        width: 100%;
+        text-align: center;
+        // color: #212121;
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+      }
+    }
+
+    &_Icon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: calc(100% + 0.2rem);
+      display: flex;
+      align-items: end;
+    }
+
+    &_Selected_Icon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 1rem;
+      height: 100%;
+    }
+
+    &__Selected {
+      background: #F2F4FF;
+      color: #6386E2;
+      font-weight: 500;
+    }
+
+    &:hover {
+      background: #F2F4FF50;
+    }
+  }
+}
